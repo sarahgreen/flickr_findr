@@ -9,8 +9,8 @@ Usage
 
 Guide to this repo 
 -------------------
-* index.html: open this file to interact with the application 
-* styles.css: style sheet for the application 
-* script.js: JavaScript/jQuery script for make my application 
-* node_modules: directory containing flickrapi, installed using npm 
-* images: directory containing image files used in my interface 
+* index.html: open to interact with the app 
+* styles.css: app style sheet  
+* script.js: JavaScript/jQuery app script  
+* node_modules: directory containing flickrapi  
+* images: directory containing app image files  
