@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>
+            Flickr Findr
+        </title>
+
+        <link rel="icon" type="image/png" href="images/gridBlue.png"> <!-- favicon -->
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,400italic,700italic' rel='stylesheet' type='text/css'> <!-- Google Font -->
+        <link rel="stylesheet" type="text/css" href="styles.css"> <!-- my style sheet -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- jQuery -->
+        <script src="node_modules/flickrapi/browser/flickrapi.js"></script> <!-- flickr API -->
+        <script src="script.js"></script>
+
+    </head>
+
+    <body>
+
+        <!-- header with logo -->
+
+        <div class="searchHeader">
+            <h1>Flickr  <img class="icon" src="images/gridBlue.png"/> Findr</h1>
+        </div>
+
+        <!-- search page -->
+
+        <div class="searchPage">
+
+            <div class="searchPageContent">
+
+                <div class="searchBar">
+
+                    <div class="searchType">
+                        <input id="imageSearch" type="text" class="textInput" placeholder="Search images by title, tag, description...">
+                        <br>
+                        <div class="label">Images</div>
+                    </div>
+
+                    <div class="searchType">
+                        <input id="userSearch" type="text" class="textInput" placeholder="And/or search images by user...">
+                        <br>
+                        <div class="label">Users</div>
+                    </div>
+
+                    <div class="searchButtonWrapper">
+                        <input type="submit" class="button" id="searchButton">
+                    </div>
+
+                </div>
+
+                <div class="uploadTimeWrapper">
+
+                    <div class="uploadTime">
+                        <p class="showPhotosFrom">Only show photos from </p>
+
+                        <div class="dateForm">
+                            after 
+                            <input type="text" id="afterDate" class="dateInput" placeholder="yyyy-mm-dd">
+                        </div>
+
+                        <div class="dateForm">
+                            and/or before 
+                            <input type="text" class="dateInput" id="beforeDate" placeholder="yyyy-mm-dd">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- gallery page (search results) -->
+
+        <div class="resultsPage">
+            <div class="buttons">
+                <button id="backButton" class="button" type="button">Back to Search</button>
+                <button id="showMore" class="button" type="button">Show More</button>
+            </div>
+
+            <div class="resultsContent">
+
+                <div class="gallery">
+                    <div class="photos">
+                        <div id="grid"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- footer -->
+
+        <div class="footer">
+            <a href="#openModal">Need help?</a>
+            <div id="openModal" class="modal">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Flickr Findr Help</h2>
+                    <p>Hey there! You can use this web application to search for <a target="_blank" href="https://www.flickr.com/">Flickr</a> images, without going directly to Flickr. Neat, huh?
+                        <br><br>
+                        You can search for images in general by typing keywords (like a title, tag, or description) into the left-hand box.
+                        <br><br>
+                        You can search for images from a certain user by typing their Flickr username into the right-hand box.
+                        <br><br>
+                        You can also do both, to search for certain kinds of images from a specific user (like all photos of "sky" by user "shutterjack").
+                        <br><br>
+                        If you only want to see images uploaded before and/or after some date, enter the date(s) into the smaller text boxes. Dates should be entered in the format yyyy-mm-dd (year-month-day).
+                        <br><br>
+                        To close this box, click the "X" button in the top-right corner.
+                        <br><br>
+                        If you can't find any photos you like, try a different search!
+                        <br><br><br>
+                        This application was built by Sarah Green for the User Interface Design course at Columbia University in Fall 2014.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

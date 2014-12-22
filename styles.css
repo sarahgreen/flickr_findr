@@ -1,0 +1,340 @@
+html
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #292929;
+    color: #fff;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body, input, button, a
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 105%;
+}
+
+
+/* Search Page Styles */
+
+.searchHeader
+{
+    margin-top: 7%;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+h1
+{
+    font-size: 300%;
+    font-weight: bold;
+    margin-top: 8%;
+    text-align: center;
+}
+
+h3
+{
+    text-align: center;
+}
+
+.icon
+{
+    border: 1px solid #ccc;
+    height: 50px;
+    margin-top: 5%;
+    width: 50px;
+}
+
+.searchPageContent
+{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12%;
+    width: 100%;
+}
+
+.searchBar, .uploadTimeWrapper
+{
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.searchType
+{
+    display: inline-block;
+    width: 30%;
+}
+
+.searchButtonWrapper
+{
+    display: inline-block;
+    height: 70px;
+    margin: 1px;
+    vertical-align: top;
+}
+
+.uploadTime
+{
+    margin: 40px auto 0 auto;
+    text-align: center;
+    width: 90%;
+}
+
+.label
+{
+    display: inline-block;
+    font-size: 110%;
+    width: 32%;
+}
+
+.showPhotosFrom, .dateForm
+{
+    display: inline;
+}
+
+.dateForm
+{
+    line-height: 175%;
+}
+
+input[type="text"]
+{
+    color: #4d4d4d;
+    font-size: 85%;
+    text-overflow: ellipsis;
+}
+
+button, .button
+{
+    border: 1px solid #a3a3a3;
+    color: #397c73;
+}
+
+button:hover, .button:hover
+{
+    cursor: pointer;
+}
+
+.textInput
+{
+    display: inline;
+    height: 35px;
+    margin: 1px;
+    padding: 0 6px;
+    vertical-align: middle;
+    width: 95%;
+}
+
+.dateInput
+{
+    display: inline;
+    height: 21px;
+    margin: 1px;
+    padding: 1px 5px;
+    vertical-align: middle;
+    width: 100px;
+}
+
+#searchButton
+{
+    background-color: #c5fef7;
+    background-image: url(images/searchLight.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 33px 33px;
+    color: transparent;
+    height: 39px;
+    margin-left: 1px;
+    vertical-align: middle;
+    width: 39px;
+}
+
+#searchButton:hover
+{
+    background-image: url(images/searchDark.png);
+}
+
+button:focus, input:focus, .label:focus, .close:focus
+{
+    outline: 0;
+}
+
+.buttons
+{
+    height: 30px;
+    margin-bottom: 6px;
+    position: relative;
+    width: 100%;
+}
+
+
+/* Gallery Page Styles */
+
+.gallery
+{
+    margin-bottom: 50px;
+}
+
+.photos
+{
+    margin: 0 auto;
+    text-align: center;
+    width: 95%;
+}
+
+#grid
+{
+    display: inline-block;
+}
+
+.wrapper
+{
+    display: inline-block;
+    width: 150px;
+    margin: 5px;
+}
+
+.photo
+{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin: 5px;
+    max-width: 200px;
+}
+
+.thumbnail
+{
+    background-attachment: local;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-bottom: 0px;
+    width: 200px;
+}
+
+.thumbnail:hover
+{
+    background-color: #fff;
+    opacity: 0.5;
+}
+
+.caption
+{
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 5%;
+    word-wrap: break-word;
+}
+
+a
+{
+    color: #397c73;
+}
+
+a:hover
+{
+    color: #ec8500;
+}
+
+#backButton, #showMore
+{
+    background-color: #c5fef7;
+    display: inline-block;
+    height: 30px;
+    margin: -5px 25px;
+    position: absolute;
+}
+
+#backButton:hover, #showMore:hover
+{
+    background-color: #ffaa3b;
+}
+
+#backButton
+{
+    left: 0;
+}
+
+#showMore
+{
+    right: 0;
+}
+
+
+/* Footer and Help Modal Styles */
+
+.footer
+{
+  background-color: #c5fef7;
+  bottom: 0;
+  font-size: 12px;
+  opacity: 0.97;
+  padding: 10px;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer a
+{
+    color: #ec8500;
+}
+
+.modal {
+    -moz-transition: opacity 400ms ease-in;
+    -webkit-transition: opacity 400ms ease-in;
+    background: rgba(0,0,0,0.8);
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: opacity 400ms ease-in;
+    z-index: 99999;
+}
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal > div {
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    border-radius: 10px;
+    color: #2c615a;
+    height: 40%;
+    margin: 20% auto;
+    overflow: scroll;
+    padding: 5px 20px 13px 20px;
+    position: relative;
+    width: 40%;
+    word-wrap: break-word;
+}
+
+.close {
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    right: 4%;
+    text-align: center;
+    text-decoration: none;
+}
