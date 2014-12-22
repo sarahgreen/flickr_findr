@@ -1,13 +1,13 @@
-Flickr Findr: an image search web application
-=============================================
+Flickr Findr: an image search web app 
+======================================
 
-Usage
+Usage 
 ------
-	1. Ensure that all files listed below are in the root directory 
-	2. Open index.html 
-	3. Try out Flickr Findr
+	1. Download ZIP 
+	2. Open index.html in root directory 
+	3. Try out Flickr Findr! 
 
-Guide to this repo
+Guide to this repo 
 -------------------
 * index.html: open this file to interact with the application 
 * styles.css: style sheet for the application 
