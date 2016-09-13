@@ -13,10 +13,11 @@ body
     padding: 0;
 }
 
-body, input, button, a
+body, input, button, a, h1 
 {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
     font-size: 105%;
+    font-weight: 100;
 }
 
 
@@ -33,7 +34,6 @@ body, input, button, a
 h1
 {
     font-size: 300%;
-    font-weight: bold;
     margin-top: 5%;
     text-align: center;
 }
@@ -79,7 +79,7 @@ h3
 {
     display: inline-block;
     height: 70px;
-    margin: 1px;
+    margin: 1px 1px 1px 0px;
     vertical-align: top;
 }
 
@@ -277,10 +277,8 @@ a:hover
 
 .footer
 {
-  background-color: #ccc;
   bottom: 0;
   font-size: 12px;
-  opacity: 0.97;
   padding: 10px;
   position: fixed;
   right: 0;
@@ -291,6 +289,7 @@ a:hover
 .footer a
 {
     color: #e30074;
+    text-decoration: none;
 }
 
 .modal {
