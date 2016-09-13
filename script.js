@@ -215,4 +215,17 @@ $(document).ready(function () {
         }
     });
 
+    // on logo/header click, clear API query parameters and hide previous photo results
+    $(".headerWrapper").click(function () {
+        params.page = 0;
+        delete params.text;
+        delete params.user_id;
+        delete params.min_upload_date;
+        delete params.max_upload_date;
+        $(".error").remove();
+        $("#grid").children().remove();
+        $(".resultsPage").hide(1000);
+        $(".searchPage").show(1000);
+    });
+
 });
