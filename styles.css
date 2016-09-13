@@ -13,7 +13,7 @@ body
     padding: 0;
 }
 
-body, input, button, a, h1 
+body, input, button, a, h1, h3 
 {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 105%;
@@ -56,7 +56,7 @@ h3
     display: table;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 12%;
+    margin-top: 11%;
     width: 100%;
 }
 
@@ -110,6 +110,7 @@ h3
 input[type="text"]
 {
     color: #4d4d4d;
+    margin: 0;
     font-size: 85%;
     text-overflow: ellipsis;
 }
@@ -277,6 +278,7 @@ a:hover
 
 .footer
 {
+  background-color: #353535;
   bottom: 0;
   font-size: 12px;
   padding: 10px;
